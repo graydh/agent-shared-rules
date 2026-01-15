@@ -1,0 +1,45 @@
+# Ruler Configuration Template
+# Copy to your project's .ruler/ruler.toml and customize
+
+# Default agents to apply when --agents is not specified
+default_agents = ["claude", "gemini-cli"]
+
+# Enable nested rule loading from nested .ruler directories
+nested = false
+
+# Enable skills support (experimental, requires uv for non-native agents)
+[skills]
+enabled = true
+
+# --- Agent Configurations ---
+
+[agents.claude]
+enabled = true
+# output_path = "CLAUDE.md"
+
+[agents.gemini-cli]
+enabled = true
+# output_path = "GEMINI.md"
+
+[agents.copilot]
+enabled = false
+
+[agents.cursor]
+enabled = false
+
+[agents.aider]
+enabled = false
+
+[agents.codex]
+enabled = false
+
+# --- MCP Servers (optional) ---
+# Define Model Context Protocol servers here
+
+# [mcp_servers.filesystem]
+# command = "npx"
+# args = ["-y", "@modelcontextprotocol/server-filesystem", "/path/to/project"]
+
+# [mcp_servers.git]
+# command = "npx"
+# args = ["-y", "@modelcontextprotocol/server-git", "--repository", "."]
