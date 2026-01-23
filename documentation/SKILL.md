@@ -1,3 +1,7 @@
+---
+name: documentation
+description: Use this skill when writing or updating documentation.
+---
 # Documentation Skill
 
 Use this skill when writing or updating documentation.
@@ -85,9 +89,9 @@ Brief description of what it does.
 **Returns:** `Promise<Result>` - Description
 
 **Example:**
-\`\`\`javascript
+```javascript
 const result = await functionName('value', 5);
-\`\`\`
+```
 ```
 
 ## Changelog Format
@@ -105,14 +109,4 @@ Follow [Keep a Changelog](https://keepachangelog.com/):
 
 ### Fixed
 - Bug in Z
-
-### Removed
-- Deprecated API endpoint
 ```
-
-## When to Update Docs
-
-- New features: Add usage documentation
-- API changes: Update reference docs
-- Bug fixes: Update if behavior was documented incorrectly
-- Dependencies: Update installation instructions if needed

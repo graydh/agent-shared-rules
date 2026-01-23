@@ -1,3 +1,7 @@
+---
+name: git-workflow
+description: Use this skill for branching strategies, merge requests, and git operations.
+---
 # Git Workflow Skill
 
 Use this skill for branching strategies, merge requests, and git operations.

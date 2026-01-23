@@ -1,3 +1,7 @@
+---
+name: commit-message
+description: Use this skill when creating git commits to ensure proper formatting and attribution.
+---
 # Commit Message Skill
 
 Use this skill when creating git commits to ensure proper formatting and attribution.
