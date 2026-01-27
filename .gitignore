@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.idea/
+*.swp
+*.swo
+
+# START Ruler Generated Files
+# These entries are managed by ruler apply --gitignore
+# Do not edit this section manually
+/AGENTS.md
+/CLAUDE.md
+.gemini/
+.claude/skills/
+# END Ruler Generated Files
+
+# Keep .ruler/ source files tracked
+!.ruler/AGENTS.md
+!.ruler/ruler.toml

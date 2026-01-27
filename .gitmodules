@@ -1,0 +1,4 @@
+[submodule ".ruler/skills"]
+	path = .ruler/skills
+	url = https://github.com/graydh/agent-shared-rules.git
+	branch = main

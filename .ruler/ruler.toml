@@ -1,0 +1,39 @@
+# Ruler Configuration for agent-shared-rules
+# This repository uses itself as its own skills source
+
+# Default agents to apply when --agents is not specified
+default_agents = ["claude", "gemini-cli"]
+
+# Enable nested rule loading from nested .ruler directories
+nested = false
+
+# Enable skills support
+[skills]
+enabled = true
+
+# --- Agent Configurations ---
+
+[agents.claude]
+enabled = true
+
+[agents.gemini-cli]
+enabled = true
+
+[agents.copilot]
+enabled = false
+
+[agents.cursor]
+enabled = false
+
+[agents.aider]
+enabled = false
+
+[agents.codex]
+enabled = false
+
+# --- MCP Servers (optional) ---
+# Define Model Context Protocol servers here if needed
+
+# [mcp_servers.filesystem]
+# command = "npx"
+# args = ["-y", "@modelcontextprotocol/server-filesystem", "."]

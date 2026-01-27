@@ -1,0 +1,1 @@
+skills/_rules/00-response-style.md
