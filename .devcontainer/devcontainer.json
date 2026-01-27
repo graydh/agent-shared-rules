@@ -7,7 +7,7 @@
     },
     "ghcr.io/devcontainers/features/git:1": {}
   },
-  "postCreateCommand": "npm install -g @intellectronica/ruler && git submodule update --init --recursive",
+  "postCreateCommand": "npm install -g @intellectronica/ruler && git submodule update --init --recursive && git worktree add ../agent-shared-rules-main main",
   "customizations": {
     "vscode": {
       "extensions": [

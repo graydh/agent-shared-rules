@@ -11,12 +11,21 @@ Thumbs.db
 *.swo
 
 # START Ruler Generated Files
-# These entries are managed by ruler apply --gitignore
-# Do not edit this section manually
+/.agent/skills
+/.agents/skills
+/.claude/skills
+/.codex/skills
+/.cursor/skills
+/.factory/skills
+/.gemini/
+/.opencode/skill
+/.pi/skills
+/.roo/skills
+/.vibe/skills
 /AGENTS.md
+/AGENTS.md.bak
 /CLAUDE.md
-.gemini/
-.claude/skills/
+/CLAUDE.md.bak
 # END Ruler Generated Files
 
 # Keep .ruler/ source files tracked

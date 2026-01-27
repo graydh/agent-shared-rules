@@ -107,3 +107,62 @@ git cherry-pick <commit-sha>
 - `release/*` - Release stabilization branches
 - Never force-push to protected branches
 - All changes via merge/pull request
+
+## Worktree-Based Development
+
+For repositories with separate development and library branches (e.g., `dev` for tooling, `main` for consumable content), use git worktrees to work on both simultaneously.
+
+### Setup
+
+```bash
+# From the dev branch checkout, create a worktree for main
+git worktree add ../project-main main
+```
+
+This creates a sibling directory with `main` checked out:
+
+```
+project/           # dev branch (dev container, tooling)
+project-main/      # main branch (library code)
+```
+
+### Creating Feature Branches
+
+When making changes to the library (main branch):
+
+```bash
+# Work in the main worktree
+cd ../project-main
+
+# Create feature branch from main
+git switch -c feature/my-feature
+
+# Make changes, commit, push
+git push -u origin feature/my-feature
+```
+
+### Keeping Worktrees in Sync
+
+```bash
+# In the main worktree
+cd ../project-main
+git fetch origin
+git rebase origin/main  # or merge
+```
+
+### Cleanup
+
+```bash
+# Remove a worktree when done
+git worktree remove ../project-main
+
+# List all worktrees
+git worktree list
+```
+
+### Key Rules
+
+- Feature branches for `main` must be created in the main worktree
+- Never merge `dev` into `main` (they have different purposes)
+- Only merge `main` into `dev` to get library updates
+- PRs for library changes target `main`, not `dev`
