@@ -11,17 +11,8 @@ Thumbs.db
 *.swo
 
 # START Ruler Generated Files
-/.agent/skills
-/.agents/skills
 /.claude/skills
-/.codex/skills
-/.cursor/skills
-/.factory/skills
-/.gemini/
-/.opencode/skill
-/.pi/skills
-/.roo/skills
-/.vibe/skills
+/.gemini/skills
 /AGENTS.md
 /AGENTS.md.bak
 /CLAUDE.md
